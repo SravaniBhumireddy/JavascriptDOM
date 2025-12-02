@@ -11,5 +11,6 @@ alert(1);
 
 //multiple elements
 
+
 console.log(document.querySelectorAll('.item'));//NodeList(3) [li.item, li.item, li.item]
-console.log(document.getElementsByClassName('item'));
+console.log(document.getElementsByClassName('item'));//HTMLCollection(3) [li.item, li.item, li.item]
