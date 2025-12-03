@@ -28,11 +28,12 @@ ul.firstElementChild.textContent = 'Hello';//changes the first element item 1 as
 ul.children[1].innerText='brad';//It changes the value item 2 to brad
 ul.lastElementChild.innerHTML='<h1>World</h1>';//it changes values item 3 to Hello
 */
+//btn.style.background='red';//It changes the color of the btn from black to red
 
 const btn=document.querySelector('.btn');
-//btn.style.background='red';//It changes the color of the btn from black to red
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(e);
+    document.querySelector('#my-form').style.background = '#ccc';
+    document.querySelector('body').classList.add('bg-dark');
 });
