@@ -13,8 +13,15 @@ alert(1);
 
 //console.log(document.querySelectorAll('.item'));//NodeList(3) [li.item, li.item, li.item]
 //console.log(document.getElementsByClassName('item'));//HTMLCollection(3) [li.item, li.item, li.item]
-console.log(document.getElementsByClassName('li'));
-
+//console.log(document.getElementsByClassName('li'));
+/*
 const items= document.querySelectorAll('.item');
 
 items.forEach((item) => console.log(item));
+*/
+
+const ul= document.querySelector('.items');
+
+//ul.remove();// deletes entire array
+//ul.lastElementChild.remove();//deletes the last element in array
+ul.firstElementChild.textContent = 'Hello';//changes the first element item 1 as Hello
