@@ -11,6 +11,10 @@ alert(1);
 
 //multiple elements
 
+//console.log(document.querySelectorAll('.item'));//NodeList(3) [li.item, li.item, li.item]
+//console.log(document.getElementsByClassName('item'));//HTMLCollection(3) [li.item, li.item, li.item]
+console.log(document.getElementsByClassName('li'));
 
-console.log(document.querySelectorAll('.item'));//NodeList(3) [li.item, li.item, li.item]
-console.log(document.getElementsByClassName('item'));//HTMLCollection(3) [li.item, li.item, li.item]
+const items= document.querySelectorAll('.item');
+
+items.forEach((item) => console.log(item));
